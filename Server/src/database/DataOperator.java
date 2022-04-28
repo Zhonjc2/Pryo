@@ -16,7 +16,7 @@ public class DataOperator {
     public static void loadDatabase(){
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306","root","Zho-njc-13579");
+            Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306","root","YourPassword");
             DataOperator.conn=conn;
             new Thread(()->{
                 while(true) {
