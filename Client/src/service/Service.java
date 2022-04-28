@@ -206,8 +206,7 @@ public class Service extends AbstractService{
 
 
 //        try {
-            socket=new Socket("127.0.0.1",9001);
-//            socket=new Socket("59.110.52.113",9001);
+            socket=new Socket("127.0.0.1",9001);//YOUR SERVER IP
             socket.setSoTimeout(5000);
             processor=new ClientPacketProcessor(socket);
             for(int i=0;i<noteLoaded.length;i++)noteLoaded[i]=false;
